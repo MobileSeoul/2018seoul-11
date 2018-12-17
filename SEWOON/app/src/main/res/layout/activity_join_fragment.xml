@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Event.TourFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="세운 기술중개"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanumsquare2"
+            android:textColor="#49575a"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquare2"
+            android:textSize="17dp"
+            android:lineSpacingMultiplier="1.4"
+            android:text="기술적 해법이 필요한 사람들에게 관련 정보를 제공하고, 세운상가군의 전문가들과 연결하여 기술적인 문제 해결을 중개하는 기술 코디네이팅 프로그램입니다. 기술교육, 제품개발, 제조창업에 도움이 필요한 분들께 세운이 기술중개소가 되어드립니다." />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/match" />
+
+        <Button
+            android:layout_marginTop="60dp"
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#b8a891"
+            android:text="온라인 신청"
+            android:textColor="#ffffff"
+            android:textSize="20dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

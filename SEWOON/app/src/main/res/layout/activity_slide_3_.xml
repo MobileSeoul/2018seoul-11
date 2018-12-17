@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Trip.Slide_1_Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetStart="0dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/txv_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquare2"
+                android:layout_gravity="center"
+                android:text="세운문화재전시관"
+                android:textColor="#45555f"
+                android:textSize="20sp" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                android:background="@drawable/trip3" >
+
+
+                <TextView
+                    android:text="공사 중 발견된 유적들을 볼 수 있는 곳"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="세운문화재전시관"
+                    android:textColor="#ffffff"
+                    android:textSize="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="50dp"
+                android:textSize="17dp"
+                android:lineSpacingExtra ="6dp"
+                android:lineSpacingMultiplier="1.3"
+                android:text="지하에는‘세운문화재전시관’이 있다. 초록띠공원 부지 발굴 조사 중 한성부 중부 관아터로 추정하는 유적이 확인됐고, 이곳을 전시관으로 조성한 것. 조선 전기부터 후기 그리고 근현대에 이르는 건물터 흔적, 임진왜란으로 생긴 두꺼운 화재층(소토층)이 보존되어 있다.\n\n 전시관을 찾으면 출토 유물을 눈으로 볼 수 있는데, 조선 전기 세 곳의 건물터에서 출토된 청동거울, 청동희준(제기), 청동화로 등 제사용품과 봉황문 막새기와, 천 자 새김 전돌 등 민가에서는 사용하기 어려운 유물을 감상할 수 있다.\n\n 이 전시관은 사대문 안 유적을 현지에 그대로 보존해 전시한 첫 사례다.문화와 기술이 흐르는 전시 공간 세운홀을 찾으면 다양한 전시를 만날 수 있다."
+                ></TextView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

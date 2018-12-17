@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Trip.Slide_1_Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetStart="0dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/txv_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquare2"
+                android:layout_gravity="center"
+                android:text="청계천"
+                android:textColor="#45555f"
+                android:textSize="20sp" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                android:background="@drawable/trip2" >
+
+
+                <TextView
+                    android:text="서울의 대표 명소, 도심 속의 바캉스"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="청계천"
+                    android:textColor="#ffffff"
+                    android:textSize="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="50dp"
+                android:textSize="17dp"
+                android:lineSpacingExtra ="6dp"
+                android:lineSpacingMultiplier="1.3"
+              android:text="종로구와 중구 사이를 가르는 10.84km의 하천. 청계천의 짧은 정의다. 하지만 청계천에는 무수히 많은 이야기가 농축되어 있다. 그것은 600년 수도 서울이 가지는 역사이기도 하고, 서울 시민 개개인이 가진 소소한 추억이기도 하다.\n\n 2003년 7월부터 2005년 9월까지 청계천은 엄청난 변신을 도모했다. 복개한 청계천로와 삼일로 주변 5.84km 구간을 복원하고 총 22개의 다리를 설치하는 등 시민들의 쉼터로 탈바꿈하기 위한 대대적인 공사였다.\n\n 청계광장을 중심으로 각종 문화행사 등이 열리면서 지금은 광장의 역할도 하고 있다. 최근에는 예술 공간으로서의 역할도 훌륭히 해내고 있다"
+                ></TextView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

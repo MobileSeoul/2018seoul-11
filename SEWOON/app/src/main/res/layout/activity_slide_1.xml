@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Trip.Slide_1_Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetStart="0dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/txv_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquare2"
+                android:layout_gravity="center"
+                android:text="세운옥상"
+                android:textColor="#45555f"
+                android:textSize="20sp" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                android:background="@drawable/trip1" >
+
+
+                <TextView
+                    android:text="서울 도심부의 360도 경관을 감상할 수 있는 공간"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="세운옥상"
+                    android:textColor="#ffffff"
+                    android:textSize="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="50dp"
+                android:textSize="17dp"
+                android:lineSpacingExtra ="6dp"
+                android:lineSpacingMultiplier="1.3"
+
+                android:text="세운옥상은 세운상가 옥상을 새단장하여 시민에게 개방한 서울의 새로운 명소입니다.\n\n기존에는 옥상이 굳게 닫혀 있었는데, 세운상가 주민들과 서울시가 5년간 무상사용 협약을 맺으면서 옥상 개방의 물꼬를 텄습니다.당돌하게 “세운옥상”이라 이름 붙이는 것이 부끄럽지 않을 만큼 훌륭한 경관을 자랑하며, 특히 해질녘 일몰과 늦은 밤 서울 도심의 아름다운 스카이라인을 감상할 수 있는 최고의 뷰포인트입니다.\n\n약 2,300㎡의 면적으로 서울 도심부의 360도 경관을 감상하며 탁 트인 개방감을 자랑하는 공간으로, 각종 이벤트를 진행할 수 있습니다." />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

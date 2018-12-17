@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mingi.sewoon">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera2" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.mingi.sewoon"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Trip.TripMenuActivity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".Trip.Slide_1_Activity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".Shop.ShopMenuActivity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".Shop.ShopDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".Event.EventMenuActivity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".Fix.FixSubmitActivity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".Fix.FixMenuActivity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".Fix.FixDetail_Reply_Activity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".Fix.FixDetail_NoReply_Activity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity android:name=".MyMenu.MyMenuActivity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".Fix.FixReplyActivity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".Trip.Slide_2_Activity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".Trip.Slide_3_Activity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".Trip.Slide_4_Activity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".Match.MatchMenuActivity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity android:name=".RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".MyMenu.FromListActivity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity android:name=".MyMenu.FromDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+    </application>
+
+</manifest>
